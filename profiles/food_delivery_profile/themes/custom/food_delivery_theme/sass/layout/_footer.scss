@@ -1,0 +1,148 @@
+#footer {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  background-color: #232832;
+  overflow: hidden;
+  padding: 0 !important;
+}
+#footer-columns {
+  margin: 58px auto;
+  max-width: 1170px;
+  padding: 0 30px;
+  .region {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    margin-right: 4%;
+    float: left;
+    p, a {
+      color: #bcbcbc;
+      font-family: $font-open-sans;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+      text-decoration: none;
+    }
+    .footer-menu {
+      h2 {
+        margin-top: 3px;
+        margin-bottom: 15px;
+        color: #fefefe;
+        font-size: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 8px 0 8px 0;
+          border-bottom: 1px solid rgba(188, 188, 188, 0.5);
+          a {
+            @include letter_spacing(40);
+          }
+        }
+        li:first-child {
+          padding-top: 0;
+        }
+      }
+
+      .contextual-links {
+        margin: 0;
+        padding: 0.25em 0;
+
+        li {
+          margin: 0;
+          padding: 0;
+          border: none;
+
+          a {
+            margin: 0.25em 0;
+            padding: 0.25em 1em 0.25em 0.5em;
+          }
+        }
+      }
+    }    
+  }
+  .region:last-child {
+    margin-right: 0;
+  }
+  .region-footer-firstcolumn {
+    .footer-site-branding {
+      vertical-align: top;
+      div {
+        display: inline-block;
+        vertical-align: top;
+      }
+      h2 {
+        color: white;
+        font-family: $font-title;
+        font-size: 32px;
+        font-weight: 300;
+        text-transform: none;
+        margin-left: 3px;
+        margin-bottom: 25px;
+      }
+    }
+    .company-description {
+      margin-bottom: 30px;
+      p {
+        line-height: 25px;
+      }
+    }
+    .social-network-images {
+      .icon {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        margin-right: 5px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      a {
+        height: 36px;
+        width: 36px;
+        display: block;
+      }
+      .icon:last-child {
+        margin-right: 0;
+      }
+      .twitter-icon {
+        background: url(../images/social-network.png) 0 0 no-repeat;
+      }
+      .facebook-icon {
+        background: url(../images/social-network.png) -50px 0 no-repeat;
+      }
+      .instagram-icon {
+        background: url(../images/social-network.png) -102px 0 no-repeat;
+      }
+      .pinterest-icon {
+        background: url(../images/social-network.png) -152px 0 no-repeat;
+      }
+      .google-plus-icon {
+        background: url(../images/social-network.png) -102px 0 no-repeat;
+      }
+    }
+    .copyright-info {
+      text-align: left;
+      margin: 37px 0 0 0;
+      p {
+        opacity: 0.7;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .region-footer-secondcolumn {
+    .block-content {
+      
+    }
+  }
+}

@@ -1,0 +1,11 @@
+name = Food Delivery Common
+description = Refresh the Shopping cart block by clicking on 'Add to card' by AJAX.
+package = Food Delivery
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2018-04-02
+version = "7.x-1.0-beta2"
+core = "7.x"
+project = "food_delivery_profile"
+datestamp = "1522662190"
+

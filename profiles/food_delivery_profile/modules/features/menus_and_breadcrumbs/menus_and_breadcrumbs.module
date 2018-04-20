@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Menus and Breadcrumbs feature.
+ */
+
+include_once 'menus_and_breadcrumbs.features.inc';

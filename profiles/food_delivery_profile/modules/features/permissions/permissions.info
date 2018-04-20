@@ -1,0 +1,28 @@
+name = Permissions
+core = 7.x
+package = Custom
+dependencies[] = comment
+dependencies[] = commerce_checkout
+dependencies[] = commerce_order
+dependencies[] = commerce_product
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = node
+features[features_api][] = api:2
+features[user_permission][] = access checkout
+features[user_permission][] = access comments
+features[user_permission][] = access content
+features[user_permission][] = post comments
+features[user_permission][] = skip comment approval
+features[user_permission][] = use text format filtered_html
+features[user_permission][] = view any commerce_product entity
+features[user_permission][] = view any commerce_product entity of bundle product
+features[user_permission][] = view own commerce_order entities
+project path = sites/all/modules/features
+
+; Information added by Drupal.org packaging script on 2018-04-02
+version = "7.x-1.0-beta2"
+core = "7.x"
+project = "food_delivery_profile"
+datestamp = "1522662190"
+

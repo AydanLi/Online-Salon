@@ -1,0 +1,30 @@
+@mixin submit_color($color, $background, $border_color, $font_size) {
+  font-weight: 700;
+  color: $color;
+  font-size: $font_size;
+  border-style: solid;
+  border-color: $border_color;
+  background: $background;
+  text-transform: uppercase;
+  font-family: Quicksand;
+}
+@mixin submit_size($top, $right, $bottom, $left, $border_radius, $border_width) {
+  border-radius: $border_radius;
+  border-width: $border_width;
+  padding: $top $right $bottom $left;
+}
+@mixin border_radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin letter_spacing($value_from_ps) {
+  letter-spacing:($value_from_ps/1000)+em;
+}
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

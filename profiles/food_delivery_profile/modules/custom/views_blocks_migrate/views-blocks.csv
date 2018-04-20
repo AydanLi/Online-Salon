@@ -1,0 +1,34 @@
+1,views,8d77c42de3b31afb5374f356d1a35190,deliveryfood,1,-15,sidebar_first,0,0,,,-1,
+2,views,product_blocks-block_3,deliveryfood,1,-26,sidebar_first,0,1,"<front>",,-1,sale-products-block
+3,views,slider-block_1,deliveryfood,1,0,slider,0,1,<front>,,-1,home-page-slider
+4,views,-exp-product_search-page,deliveryfood,1,0,,0,0,,,-1,
+5,views,product_blocks-block_2,deliveryfood,1,-35,content,0,1,<front>,,-1,"new-products-block products-blocks grid-mode"
+6,views,product_blocks-block_4,deliveryfood,1,-34,content,0,1,<front>,,-1,"featured-produts-block products-blocks grid-mode"
+7,views,d2c6f37a61625931c1200d5d9f075e74,deliveryfood,1,-29,sidebar_first,0,1,"<front>
+catalog
+catalog/*",,-1,invisible-block
+8,views,-exp-catalog-page,deliveryfood,1,0,header,0,0,,,-1,
+9,views,catalog_navigation-block,deliveryfood,1,4,sidebar_first,0,0,,,-1,
+10,views,-exp-catalog-page_1,deliveryfood,1,-17,header,0,0,,,-1,header-search
+11,views,-exp-catalog-page_2,deliveryfood,1,-17,header,0,0,,,-1,header-search-block
+12,views,345893a78665c839d912bdca0721974f,deliveryfood,1,-35,header,0,0,,,-1,header-search-block
+13,views,aefb000727717838cdc758d4891a3dd4,deliveryfood,1,-31,content,0,1,"how-it-works
+how-it-works-2","Frequently asked questions",-1,"how-it-works-page frequently-asked-questions"
+14,views,popular_tags-block,deliveryfood,1,-27,sidebar_first,0,1,"<front>
+catalog
+catalog/*
+new-products
+featured-products
+sale",,-1,popular-tags
+15,views,a12eabad74e65ff0a174d4535b590d55,deliveryfood,1,0,sidebar_second,0,1,typography,,-1,"popular-tags typography-page"
+16,views,team-block,deliveryfood,1,-21,content,0,1,about-company,"Our team - is a key to your success",-1,"our-team about-page"
+17,views,clients-block,deliveryfood,1,-20,content,0,1,about-company,"We are proud of our clients",-1,"our-clients about-page"
+18,views,my_card-block,deliveryfood,1,0,content,0,0,,,-1,
+19,views,31a58560758694e6cfcab0f357bd78dc,deliveryfood,1,-36,header,0,0,,,-1,header-cart-block
+20,views,billing_rewiew_1-block,deliveryfood,0,0,-1,0,0,,,-1,
+21,views,catalog_taxonomy-block,deliveryfood,1,-40,sidebar_first,0,1,"<front>
+catalog
+catalog/*
+new-products
+sale
+featured-products",Products,-1,

@@ -1,0 +1,31 @@
+{
+  "name": "deliveryfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cache-clear": "drush cc css",
+    "watch": "onchange 'src/**/*.scss' -- npm run cache-clear"
+  },
+  "author": "ADCI",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-sourcemaps": "^1.12.1",
+    "onchange": "^2.5.0",
+    "postcss-discard-duplicates": "^2.0.2",
+    "postcss-discard-unused": "^2.2.2",
+    "postcss-font-magician": "^1.4.0",
+    "postcss-merge-rules": "^2.0.10",
+    "stylefmt": "^3.5.0"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
+  }
+}

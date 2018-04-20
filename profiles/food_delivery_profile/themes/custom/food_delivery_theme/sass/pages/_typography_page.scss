@@ -1,0 +1,97 @@
+#content {
+  //margin-right: 65px;
+  .block.h1-heading {
+    margin-bottom: 54px;
+    h1 {
+      margin-bottom: 18px;
+    }
+    p.order-information {
+      margin-bottom: 18px;
+      font-size: 24px;
+      font-family: "A Garamond Pro";
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }    
+  }
+  .block.h2-heading {
+    margin-bottom: 56.5px;
+    h2 {
+      margin-bottom: 22px;
+    }
+    p.order-information {
+      margin-bottom: 14.5px;
+      font-size: 20px;
+      font-family: "A Garamond Pro";
+      line-height: 26px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 26px;
+    }    
+  }
+  .block.h3-heading {
+    margin-bottom: 74px;
+    h3 {
+      margin-bottom: 14px;
+    }
+    p.order-information {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-family: "A Garamond Pro";
+      line-height: 24px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }    
+  }
+  .block.breadcrumbs-example {
+    margin-bottom: 100px;
+    h1 {
+      margin-bottom: 28px;
+    }
+    .breadcrumb {
+      display: inline-block;
+      margin-right: 50px;
+      width: auto;
+    }
+  }
+  .block.highlights-example {
+    margin-bottom: 55px;
+    h1 {
+      margin-bottom: 20px;
+      color: #2d2d2d;
+    }
+  }
+  .block.blockquote-example {
+    margin-bottom: 80px;
+    h1 {
+      margin-bottom: 23px;
+      color: #2d2d2d;
+    }
+  }
+  .block.tables-example {
+    margin-bottom: 55px;
+  }
+  .block.buttons-example {
+    h1 {
+      margin-bottom: 19px;
+    }
+    table {
+      border-collapse: initial;
+      td {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.region-sidebar-second {
+  .region-inner {
+    .block {
+      margin-bottom: 75px;
+    }
+  }
+}

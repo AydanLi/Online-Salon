@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Refresh Shopping cart block by clicking on 'Add to card'.
+ */
+
+require_once 'include/food_delivery_common.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function food_delivery_common_form_alter(&$form, &$form_state, $form_id) {
+  if ((strpos($form_id, 'commerce_cart_add_to_cart_form_') === 0)) {
+    $form['submit']['#ajax'] = array(
+      'callback' => 'food_delivery_common_add_cart',
+      'wrapper' => $form['#id'],
+      'event' => 'click',
+    );
+    $form['#submit'][] = 'food_delivery_common_add_to_cart_form_submit';
+  }
+}

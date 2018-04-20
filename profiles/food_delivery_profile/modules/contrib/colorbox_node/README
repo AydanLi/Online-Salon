@@ -1,0 +1,40 @@
+How to Use
+
+Uses the built in AJAX Framework and menu callback functions. You can display any page now, not just nodes.
+
+When you create your links manually, you will need to add the class "colorbox-node" to the link. That is the only class required and the module will handle the colorbox loading internally. Your link can look like any of these:
+
+<a class="colorbox-node" href="blogs/my-example?width=600&height=600">My Example</a>
+<a class="colorbox-node" href="blogs/my-example" data-href="blogs/my-example?width=600&height=600">My Example</a>
+<a class="colorbox-node" href="blogs/my-example" data-inner-width="600" data-inner-height="600">My Example</a>
+It doesn't matter what path you pass it, as long as that path exists. Internally the module will fetch and execute the callback function that renders the content. It will then take that content and display it inside a colorbox modal.
+
+Gallery Support
+UPDATE: In the latest DEV version, you will need to add the class "colorbox-node-gallery" along with the rel attribute to create the gallery display.
+
+You can use the rel attribute to create galleries of content from a single page. Just add the rel attribute like so:
+
+<a class="colorbox-node colorbox-node-gallery" href="blogs/my-example?width=600&height=600" rel="gallery">My Example</a>
+
+Views Support
+There is integration from within views that extends the option "Link this field to the original piece of content". There is options to turn that link into a colorbox link automatically and provide the width and height as well.
+
+Context Support
+There is integration with the Context Module to allow you to add regions inside a colorbox window without the header and footer. This is still experimental (but works) so let me know if you have any improvements. To turn this on, you will need the Context Module and turn on the setting under the admin/config/media/colorbox settings page.
+
+Panels Integration
+There is now an access plugin for Ctools Module to integrate with the Panels Module.
+
+Use colorbox integration as a selection rule for your variants.
+Use colorbox integration as a visiblity rule for your panes (you dont have to change the complete variant)
+Howto Visibility Rule:
+
+visit your Panel "Content" tab.
+under Visibility rules for a pane select "add new rule".
+check "Colorbox Node", click next.
+If you want to show the pane just click save and you are done.
+If you want to hide the pane in mobile check the "Reverse (NOT)" checkbox and save.
+
+Entity Reference Integration
+This module can alter the display formatter for an Entity to open in a colorbox modal. You will need the Field Formatter settings Module to have these options available.
+

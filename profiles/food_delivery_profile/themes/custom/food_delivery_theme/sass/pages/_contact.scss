@@ -1,0 +1,94 @@
+.contact-us-page.page-banner {
+  h3 {
+    color: #ffffff;
+  }
+}
+.contact-us-page.info-blocks {
+  float: left;
+  //display: inline-block;
+  //vertical-align: top;
+  width: 50%;
+  padding-right: 80px;
+  box-sizing: border-box;
+  @include clearfix;
+  h2 {
+    margin-bottom: 24px;
+  }
+  p {
+    font: 400 20px/26px "A Garamond Pro";
+    color: #424242;
+    margin-bottom: 57px;
+  }
+  .info-blocks-wrapper {
+    .info-block {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      margin-bottom: 30px;
+      float: left;
+      padding-right: 20px;
+      box-sizing: border-box;
+      p {
+        font: 16px $font-open-sans;
+        margin: 0;
+      }
+      .block-icon {
+        margin-bottom: 18px;
+      }
+      h3 {
+        margin-bottom: 15px;
+      }
+    }
+    .info-block:nth-child(2n) {
+      padding-right: 0;
+    }
+  }
+}
+.contact-us-page.contact-form {
+  float: right;
+  //display: inline-block;
+  //vertical-align: top;
+  background-color: white;
+  box-shadow: 0 0 38.8px 1.2px rgba(0, 0, 0, 0.18);
+  padding: 69px 85px;
+  margin-bottom: 50px;
+  width: 50%;
+  box-sizing: border-box;
+  @include clearfix;
+  h2 {
+    text-align: center;
+    color: #0ab29c;
+  }
+  p {
+    text-align: center;
+    color: #424242;
+    font: 400 20px/26px "Minion Pro";
+  }
+  input:not(.webform-submit) {
+    border: none;
+    border-bottom: 2px solid #b1b1b1;
+    height: auto;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font: 600 18px $font-open-sans;
+    color: #b1b1b1;
+    background-color: transparent;
+    width: 100%;
+    transition: border-bottom-color 0.3s ease;
+  }
+  input:focus {
+    color: #424042;
+    outline: none;
+    border-bottom-color: #0ab29c;
+  }
+  .form-actions {
+    margin-top: 60px;
+    text-align: center;
+    .webform-submit {
+      background-color: #0ab29c;
+      border: none;
+      border-radius: 30px;
+    }
+  }
+}

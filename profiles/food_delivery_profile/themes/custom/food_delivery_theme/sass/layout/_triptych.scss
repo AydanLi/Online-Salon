@@ -1,0 +1,67 @@
+#partners {
+  .block-title {
+    color: $black;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .view-slideshow-partners {
+    position: relative;
+
+    .owl-buttons {
+      position: absolute;
+      top: 37%;
+      width: 106%;
+      margin: 0 0 0 -3%;
+      padding: 0;
+
+      .owl-prev {
+        float: left;
+        width: 21px;
+        height: 43px;
+        margin: 0;
+        padding: 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background: url("../images/left-arrow.png") no-repeat;
+      }
+
+      .owl-next {
+        float: right;
+        width: 21px;
+        height: 43px;
+        margin: 0;
+        padding: 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background: url("../images/right-arrow.png") no-repeat;
+      }
+    }
+
+    .owl-pagination {
+      display: none;
+    }
+  }
+}
+
+#triptych {
+  text-align: center;
+  width: 100%;
+  .block-title {
+    color: $black;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  .region {
+    width: 33%;
+    display: inline-block;
+  }
+}

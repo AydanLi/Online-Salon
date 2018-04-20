@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Details view future feature.
+ */
+
+include_once 'details_view_future.features.inc';

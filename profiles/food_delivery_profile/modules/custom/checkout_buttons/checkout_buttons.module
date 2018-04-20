@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Edit the title of buttons on Checkout pages and "Add to cart" form.
+ */
+
+/**
+ * Implements hook_commerce_checkout_page_info_alter().
+ */
+function checkout_buttons_commerce_checkout_page_info_alter(&$pages)  {
+  if(!empty($pages['checkout'])) {
+    $pages['checkout']['submit_value'] = t('Continue');
+    $pages['checkout']['back_value'] = t('Back to Shopping');
+  }
+
+  if(!empty($pages['shipping'])) {
+    $pages['shipping']['submit_value'] = t('Continue');
+    $pages['shipping']['back_value'] = t('Back to Billing');
+  }
+
+  if(!empty($pages['review'])) {
+    $pages['review']['submit_value'] = t('Continue');
+    $pages['review']['back_value'] = t('Back to Shippping');
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function checkout_buttons_form_commerce_cart_add_to_cart_form_alter(&$form,&$form_state) {
+  $form['submit']['#attributes']['value'] = t('+  ADD TO CART');
+}

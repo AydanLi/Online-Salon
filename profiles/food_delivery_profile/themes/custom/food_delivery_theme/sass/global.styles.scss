@@ -1,0 +1,94 @@
+//
+// 'main' partial
+//
+// To make it easier to use all variables and mixins in any SCSS file in this
+// theme, each .scss file has a @import 'base' declaration. And this base.scss
+// file is in charge of importing all the other partials needed for the theme.
+//
+
+
+//
+// Legacy IE support
+//
+// These variables are used by many mixins to add additional CSS to support
+// specific versions of IE or specific vendor prefixes.
+//
+// To turn off support for IE6 or IE7, set those variables to false.
+//
+// AdaptiveTheme does not require special handling for IE8 or later. But Compass
+// defines more Legacy IE variables that you might find useful for your theme.
+// See the documentation at http://compass-style.org/reference/compass/support/
+//
+
+$legacy-support-for-ie6: true;
+$legacy-support-for-ie7: true;
+
+
+//
+// Partials to be shared with all .scss files.
+//
+
+// @import 'compass/support';                     // Add Compass and IE vendor prefix support variables.
+// @import 'compass/utilities/general/clearfix';  // Better than Drupal's clearfix.
+// @import 'compass/utilities/sprites';           // See http://compass-style.org/help/tutorials/spriting/
+// @import 'compass/css3';                        // Use one CSS3 mixin instead of multiple vendor prefixes.
+
+// Helpers
+// The helpers/ folder (sometimes called utils/) gathers all Sass tools and helpers we’ll use across the project. Got a function? A mixin? Put it in there. This folder also contains a _variables.scss file (sometimes _config.scss) which holds all global variables for the project (for typography, color schemes, and so on).
+
+@import 'helpers/_functions.scss';
+@import 'helpers/_helpers.scss';
+@import 'helpers/_mixins.scss';
+@import 'helpers/_variables.scss';
+// Base
+// The base/ folder holds what we might call the boilerplate stuff for your project.
+// In there, you might find the reset (or Normalize.css, or whatever),
+// probably some stuff dealing with typography, and, depending on the
+// project, maybe some other files.
+@import 'base/_fonts.scss';
+@import 'base/_reset.scss';
+@import 'base/_typography.scss';
+
+// Components
+// For smaller components, there is the components/ folder (frequently called modules/). While layout/ is kind of macro (defining the global wireframe), components/ is more micro. It can contain all kinds of specific modules like a slider, a loader, a widget, or anything along those lines. There are usually a lot of files in components/ since your site is should be mostly composed of tiny modules.
+
+@import 'components/_buttons.scss';
+@import 'components/_dropdown.scss';
+@import 'components/_icons.scss';
+
+// Layout
+// The layout/ directory (sometimes called partials/) usually contains a number of files, each of them setting some styles for the main sections of the layout (header, footer, and so on). It also contains the _grid file which is the grid system used to build the layout.
+
+@import 'layout/_footer.scss';
+@import 'layout/_forms.scss';
+@import 'layout/_header.scss';
+//@import 'layout/_print.scss';
+@import 'layout/_sidebar.scss';
+@import 'layout/_base.scss';
+@import 'layout/_triptych.scss';
+@import 'layout/_popup.scss';
+
+// Pages
+// If you have page-specific styles, I think it’s cool to put them in a pages/ folder and in a file named after the page. For example, it’s not uncommon to have very specific styles for the home page, so you’d have a _home.scss file in pages/ dealing with this.
+
+@import 'pages/_contact.scss';
+@import 'pages/_home.scss';
+@import 'pages/_products.scss';
+@import 'pages/_general.scss';
+@import 'pages/_typography_page.scss';
+@import 'pages/_how_it_works.scss';
+@import 'pages/_about.scss';
+@import 'pages/_cart.scss';
+@import 'pages/_page_checkout.scss';
+//@import 'pages/';
+
+// Themes
+// If you are working on a large site with multiple themes like I do, having a themes/ folder can make sense. You can stuff all your theme/design related styles in there. This is definitely project-specific so be sure to include it only if you feel the need.
+
+@import 'themes/_admin.scss';
+@import 'themes/_theme.scss';
+
+// Vendors
+// And last but not least, you will probably have a vendors/ folder containing all the CSS files from external libraries and frameworks – Bootstrap, jQueryUI, FancyCarouselSliderjQueryPowered, and so on. Putting those aside in the same folder is a good way to tell “Hey, this is not from me, not my code, not my responsibility”.
+
+//@import 'vendors/';

@@ -1,0 +1,191 @@
+.about-page.page-banner {
+  h3 {
+    color: #ffffff;
+  }
+}
+.about-page.about-facts {
+  margin-bottom: 54px;
+  h2 {
+    text-align: center;
+    margin-bottom: 37px;
+  }
+  .horizontal-blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -26px;
+    .inline-block {
+      width: 269px;
+      margin-right: 26px;
+    }
+  }
+}
+
+.about-page.our-team {
+  margin-bottom: 79px;
+  text-align: center;
+  h2 {
+    margin-bottom: 40px;
+  }
+  .horizontal-blocks {
+    margin-right: -25px;
+  }
+  .inline-block {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-right: 25px;
+  }
+  .inline-block-inner {
+    position: relative;
+    height: 370px;
+    width: 370px;
+    &:hover {
+      .inline-block-description {
+        opacity: 1;
+        .user-name,
+        .user-position {
+          left: 0;
+        }
+      }
+    }
+    .inline-block-description {
+      background: rgba(25,25,25,0.5);
+      position: absolute;
+      padding: 34px;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      text-align: left;
+      transition: all 0.3s ease;
+      opacity: 0;
+      display: flex;
+      align-items: flex-end;
+      box-sizing: border-box;
+    }
+    .inline-block-img {
+      font-size: 0;
+    }
+    .user-info-wrapper {
+      margin-top: auto;
+      .user-name {
+        color: white;
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        transition: all 0.4s ease;
+        position: relative;
+        left: 20px;
+      }
+      .user-position {
+        color: #0ab29c;
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 26px;
+        transition: all 0.4s ease 0.05s;
+        position: relative;
+        left: 20px;
+      }
+    }
+  }
+  .team-member:last-child {
+    margin-right: 0;
+  }
+  .team-member:hover {
+    .user-info-wrapper {
+      display: block;
+    }
+  }
+  .view-content:after {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+  }  
+}
+
+.about-page.our-clients {
+  text-align: center;
+  h2 {
+    margin-bottom: 54px;
+  }
+  .owl-prev,
+  .owl-next {
+    width: 20px;
+    height: 29px;
+    top: 50px;
+  }
+  .owl-prev {
+    position: absolute;
+    left: -15px;
+    background: url(../images/arrow-left.png) center center no-repeat !important;
+  }
+  .owl-next {
+    position: absolute;
+    right: -15px;
+    background: url('../images/arrow-right.png') center center no-repeat !important;
+  }
+  .disabled {
+    display: none !important;
+  }
+  .view-content {
+    height: auto !important;
+  }
+}
+
+#subscribe {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 50px;
+  overflow: hidden;
+  label {
+    display: none;
+  }
+  .block-simplenews {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .form-item {
+    display: inline-block;
+    margin-right: 30px;
+    width: 27%;
+  }
+  .form-text {
+    border: 2px solid #b1b1b1;
+    padding: 10px 15px;
+    font: 600 18px "Open Sans", sans-serif;
+    color: #b1b1b1;
+    max-width: 100%;
+    width: 100%;
+    transition: border 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    &:focus {
+      border-color: #0ab29c;
+    }
+  }
+  .form-submit {
+    border: none;
+    color: #fffefe;
+    background-color: #0ab29c;
+    line-height: 46px;
+    padding: 0 37px;
+    &:hover {
+      color: #fff;
+      background-color: #2fbdab;
+    }
+  }
+  p {
+    color: #424242;
+    font: 400 20px/26px "Minion Pro";
+    margin: 10px 0 20px;
+  }
+}

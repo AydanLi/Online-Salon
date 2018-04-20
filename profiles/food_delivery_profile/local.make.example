@@ -1,0 +1,68 @@
+; food_delivery make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ TODO modules without versions +++++
+
+projects[search_views][version] = "" ; TODO add version
+projects[search_views][subdir] = "custom"
+
+; +++++ Libraries +++++
+
+; jquery.imagesloaded
+libraries[jquery.imagesloaded][directory_name] = "jquery.imagesloaded"
+libraries[jquery.imagesloaded][type] = "library"
+libraries[jquery.imagesloaded][destination] = "libraries"
+libraries[jquery.imagesloaded][download][type] = "get"
+libraries[jquery.imagesloaded][download][url] = "" ; TODO add download URI
+
+; Mobile_Detect
+libraries[Mobile_Detect][directory_name] = "Mobile_Detect"
+libraries[Mobile_Detect][type] = "library"
+libraries[Mobile_Detect][destination] = "libraries"
+libraries[Mobile_Detect][download][type] = "get"
+libraries[Mobile_Detect][download][url] = "" ; TODO add download URI
+
+; jquery.cycle
+libraries[jquery.cycle][directory_name] = "jquery.cycle"
+libraries[jquery.cycle][type] = "library"
+libraries[jquery.cycle][destination] = "libraries"
+libraries[jquery.cycle][download][type] = "get"
+libraries[jquery.cycle][download][url] = "" ; TODO add download URI
+
+; sidr
+libraries[sidr][directory_name] = "sidr"
+libraries[sidr][type] = "library"
+libraries[sidr][destination] = "libraries"
+libraries[sidr][download][type] = "get"
+libraries[sidr][download][url] = "" ; TODO add download URI
+
+; chosen
+libraries[chosen][directory_name] = "chosen"
+libraries[chosen][type] = "library"
+libraries[chosen][destination] = "libraries"
+libraries[chosen][download][type] = "get"
+libraries[chosen][download][url] = "" ; TODO add download URI
+
+; jquery_ui_spinner
+libraries[jquery_ui_spinner][directory_name] = "jquery_ui_spinner"
+libraries[jquery_ui_spinner][type] = "library"
+libraries[jquery_ui_spinner][destination] = "libraries"
+libraries[jquery_ui_spinner][download][type] = "get"
+libraries[jquery_ui_spinner][download][url] = "" ; TODO add download URI
+
+; owl-carousel
+libraries[owl-carousel][directory_name] = "owl-carousel"
+libraries[owl-carousel][type] = "library"
+libraries[owl-carousel][destination] = "libraries"
+libraries[owl-carousel][download][type] = "get"
+libraries[owl-carousel][download][url] = "" ; TODO add download URI
+
+; +++++ Patches +++++
+
+projects[search_api_ranges][patch][] = "search_api_ranges.patch" ; TODO add path to patch
+
